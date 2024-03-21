@@ -34,3 +34,15 @@ back = function(move_away_all)
     end for    
     
 end function
+
+backway_forward = function(move_list)
+    move_list.push(me.facing)
+    me.forward
+end function
+
+backway_back = function(move_list)
+    for i in range(move_list.len - 1)
+        set_face.direct(set_face.to_opposite(move_list[i]))
+        me.forward
+    end for
+end function
