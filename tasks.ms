@@ -11,9 +11,9 @@ hoe_task_no_judge = function(farmland_line, farmland_col)
   loop_sequare.quick_run_and_back(farmland_line, farmland_col, @tool_action.hoeing)
 end function
 
-hoe_task = function
+hoe_task = function(farmland_line, farmland_col)
   if world.season != 3 and world.dayOfSeason == 1 then
-    hoe_task_no_judge
+    hoe_task_no_judge(farmland_line, farmland_col)
   end if
 end function
 
