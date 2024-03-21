@@ -16,3 +16,7 @@ seeding = function(seed_name)
     me.select seed_name
     me.placeItem
 end function
+
+full_watering = function
+    tool_chosen.use_water
+end function
