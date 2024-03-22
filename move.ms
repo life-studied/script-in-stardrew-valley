@@ -46,3 +46,10 @@ backway_back = function(move_list)
         me.forward
     end for
 end function
+
+force_forward = function
+    if me.ahead != null then
+        me.clearAhead
+    end if
+    me.forward
+end function
